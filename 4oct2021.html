@@ -13,12 +13,6 @@
     </head>
     <body>
       <script>
-        document.getElementById("a1").innerHTML = 'WElcome to JS Training';
-        document.getElementById("a2").innerHTML = 'Hows the training going on ?';
-        document.getElementById("a3").innerHTML = 'Welcome to my first javescript page';
-
-        console.log( 2 + 2 );
-        console.log( 4 * 5 );
         //1. Function Defination is one Time process
         function sum(x,y) {//formal Argument/parameter
         console.log(x+y);
@@ -38,8 +32,38 @@
         //Function Body
         console.log(msg+' how are you?');
         }
-        //2. Function calling
+        //3. Function calling
         myFunctionB("shivkanya");//shivkanya is a actual argument
+        function myFunctionA(name){//name is a formal argument/parameter
+        //Function Body
+            console.log('hello '+name);//'hello' + 'shivkanya'
+            myFunctionC("Shivkanya");
+        }
+        //4. Function Defination
+        function myFunctionC(msg){//msg is a formal argument
+        //Function Body
+        console.log(msg+' Where are you from?');
+        }
+         //4. Function calling
+         myFunctionB("shivkanya");//shivkanya is a actual argument
+        function myFunctionC(name){//name is a formal argument/parameter
+        //Function Body
+            console.log('hello '+name);//'hello' + 'shivkanya'
+            myFunctionC("Shivkanya");
+        }
+        //5. Function Defination
+        function myFunctionC(msg){//msg is a formal argument
+        //Function Body
+        console.log(msg+' Nice to meet you.');
+        }
+        //6. Function Defination
+        function myFunctionD(name){
+            console.log('What do you do work for '+name);
+        }
+        //6.function calling
+        myFunctionD('Shivkanya');
+
+        
      </script>
 </body>
 </html>
